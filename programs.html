@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME1P97VYNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ME1P97VYNV');
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/fav-logo.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;900;1000&display=swap" rel="stylesheet" media="print" onload="this.media='all'" >
+    <script defer src="app.js"></script>
+    <title>Programi</title>
+  </head>
+  <body>
+    <header class="header__page header__sticky">
+      <nav class="header__navbar navbar__sticky">
+        <div class="header__navbar_name">
+          <a href="#"
+            ><h1 class="header__navbar_name-h1" aria-label="Vrati na vrh">
+              IskoniJa
+            </h1></a
+          >
+        </div>
+        <button
+          class="header__navbar-menu sidebar-toggle"
+          type="button"
+          aria-label="Menu"
+        >
+          <i
+            ><img src="./img/menu.svg" class="social__icons" alt="Open menu"
+          /></i>
+        </button>
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <button class="close-btn" aria-label="Close menu">
+              <i>
+                <img
+                  src="./img/close.svg"
+                  class="social__icons"
+                  alt="Close menu"
+                />
+              </i>
+            </button>
+          </div>
+          <ul class="links">
+            <li class="links__item">
+              <a href="index.html" aria-label="Početna">Početna</a>
+            </li>
+            <li class="links__item">
+              <a href="fractals.html" aria-label="Fraktalna metoda i crtež"
+                >Fraktalna metoda i crtež</a
+              >
+            </li>
+            <li class="links__item">
+              <a href="programs.html" aria-label="Programi">Programi</a>
+            </li>
+            <li class="links__item">
+              <a href="about.html" aria-label="O nama">O nama</a>
+            </li>
+            <li class="links__item">
+              <a href="contact.html" aria-label="Kontakt i prijava"
+                >Kontakt i prijava</a
+              >
+            </li>
+          </ul>
+          <ul class="social-icons">
+            <li class="social-icons_item">
+              <a href="https://www.facebook.com/skola.iskon/" aria-label="Facebook">
+                <i>
+                  <img
+                    src="./img/facebook.svg"
+                    class="social__icons"
+                    alt="Facebook"
+                  />
+                </i>
+              </a>
+            </li>
+            <li  class="social-icons_item">
+              <a href="https://www.instagram.com/fraktali_iskon/" aria-label="Instagram">
+                <i>
+                  <img
+                    src="./img/instagram.svg"
+                    class="social__icons"
+                    alt="Instagram"
+                  />
+                </i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <main class="main__section">
+      <section class="main__page_section">
+        <div class="section__wrapper">
+          <div class="main__page_heading">
+            <h2 class="heading__primary">Odaberite program</h2>
+          </div>
+          <div class="main__page_content content">
+            <p class="main__page_content-text content__text">
+              Na prvi modul mogu se prijaviti sve zainteresovane odrasle osobe koje žele da se razvijaju i povećaju
+              kvalitet svog života. Po završetku prvog modula polaznici mogu da upišu drugi ili treći modul,
+              a upis na četvrti je za one koji su završili prva tri modula. Peti modul je namenjen budućim
+              predavačima integrativnog fraktalnog crteža. Upis na fakultativne programe moguć je po završetku prvog modula škole IskoniJa ili uz predhodno
+              iskustvo sa fraktalnim crtanjem. Šta je potrebno učesnicima za praćenje nastave I modula? <br>
+              Potrebno je da učesnici pripreme:
+            </p>
+            <div class="main__page_content-materials">
+              <ul class="main__page_content-materials--list">
+                <li class="content__text">&#10095; blok za crtanje A4 (100 – 130gr, koji nije granuliran),</li>
+                <li class="content__text">&#10095; kvalitetne crne hemijske olovke (2 - 3 kom),</li>
+                <li class="content__text">
+                  &#10095; hemijske olovke 7 različitih, duginih boja (osim crne),
+                </li>
+                <li class="content__text">&#10095; najmanje dva kompleta drvenih bojica od 24 komada različitih proizvođača,</li>
+                <li class="content__text">&#10095; svesku A4 za lični metodički priručnik,</li>
+                <li class="content__text">&#10095; jedna sveska za vođenje dnevnika o utiscima i ličnim promenama (veličine po ličnom izboru)</li>
+                <li class="content__text">&#10095; jedna fascikla sa PVC folijama za odlaganje crteža.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="program" id="programs">
+        <div class="section__wrapper">
+          <div class="main__page_heading">
+            <h2 class="heading__primary">Programi</h2>
+          </div>
+          <div class="program__table">
+              <div class="program__section">
+                <article class="program__section_module">
+                  <div class="program__section_module-name">
+                    <h3 class="program__section_module-name--header">Osnovni modul</h3>
+                    <button type="button" class="program__section_module-name--btn" aria-label="Saznaj više">
+                      <span class="plus-icon">
+                        <i
+                          ><img
+                            src="./img/plus-square.svg"
+                            class="square-icons"
+                            alt="square plus"
+                        /></i>
+                      </span>
+                      <span class="minus-icon">
+                        <i
+                          ><img
+                            src="./img/minus-square.svg"
+                            class="square-icons"
+                            alt="square minus"
+                        /></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="program__section_module-content">
+                    <p class="program__section_module-content--text">
+                      OSNOVE INTEGRATIVNOG FRAKTALNOG CRTEŽA <br>
+                      Ovaj modul se bavi osnovnim znanjima o tački, liniji, kvalitetnoj mreži,
+                      značenju i vibraciji boja, pravilima bojenja polja u
+                      fraktalnom crtežu, povezano sa univerzalnom simbolikom kao što
+                      su krug, kvadrat, spirala, trougao i osmica.
+                    </p>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Teme prvog modula su: 
+                    </p>
+                    <ul class="program__section_module-content--list">
+                      <li>1. O Integrativnom fraktalnom crtežu;</li>
+                      <li>2. Linije, veličina polja, vrste pritiska;</li>
+                      <li>3. Položaj crteža i njegove karakteristike;</li>
+                      <li>4. O bojama i njihovom značenju u integrativnom fraktalnom crtežu;</li>
+                      <li>5. O univerzalnim simbolima;</li>
+                      <li>6. Linije kroz ritam, boju i zvuk;</li>
+                      <li>7. Neuroplastčnost mozga i integrativni fraktalni crtež;</li>
+                      <li>8. Izložba.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ciljevi prvog modula su:
+                    </p>
+                    <ul>
+                      <li>&#9900; Upoznavanje zakonitosti fraktala u prirodi;</li>
+                      <li>&#9900; Sticanje osnovnih znanja o integrativnom fraktalnom crtežu;</li>
+                      <li>&#9900; Upoznavanje fraktalnih principa kroz integrativni fraktalni crtež.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ishod prvog modula je savladana osnovna znanja izrade integrativnog fraktalnog
+                      crteža.
+                    </p>
+                  </div>
+                </article>
+                <article class="program__section_module">
+                  <div class="program__section_module-name">
+                    <h3 class="program__section_module-name--header">Simboli modul</h3>
+                    <button type="button" class="program__section_module-name--btn" aria-label="Saznaj više">
+                      <span class="plus-icon">
+                        <i
+                          ><img
+                            src="./img/plus-square.svg"
+                            class="square-icons"
+                            alt="square plus"
+                        /></i>
+                      </span>
+                      <span class="minus-icon">
+                        <i
+                          ><img
+                            src="./img/minus-square.svg"
+                            class="square-icons"
+                            alt="square minus"
+                        /></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="program__section_module-content">
+                    <p class="program__section_module-content--text">
+                      SVETA GEOMETRIJA U INTEGRATIVNOM FRAKTALNOM CRTEŽU <br>
+                      Ovaj modul se bavi produbljivanjem univerzalne simbolike kroz kvantnu
+                      fiziku, dekodiranje obrazaca ponašanja, značenja sakralne
+                      geometrije i hologramski pristup.
+                    </p>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Teme drugog modula su: 
+                    </p>
+                    <ul class="program__section_module-content--list">
+                      <li>1. Sveta geometrija, promena, kretanje;</li>
+                      <li>2. Sveta geometrija, ljubav, istina, mudrost;</li>
+                      <li>3. Kvantno polje i celovitost;</li>
+                      <li>4. Struktura, zemaljski plan, materijalizacija;</li>
+                      <li>5. Dekodiranje i promena obrazaca;</li>
+                      <li>6. Muški i ženski princip u integrativnom fraktalnom crtežu;</li>
+                      <li>7. Sveobuhvatnost.</li>
+                      Svaka tema započinje definisanjem vlastitih namera u vezi sa ličnim promenama.
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ciljevi drugog modula su: 
+                    </p>
+                    <ul>
+                      <li>&#9900; Postavljanje namera u odnosu na primanje i davanje i njihovu ravnotežu kroz simbol
+                      spirale;</li>
+                      <li>&#9900; Postavljanje namera kroz simbol trougla - ljubav, istina i mudrost, prepoznavanje
+                      svojih ograničenja i težnji usklađivanja dvojne prirode u čoveku</li>
+                      <li>&#9900; Postavljanje namera vezanih za svoju celovitost i definisanju kvaliteta u razvoju
+                      svojih potencijala;</li>
+                      <li>&#9900; Postavljanje namera vezanih za strukturu, materijalizaciju i zemaljski plan kroz proces
+                      promene: moram- mogu- hoću;</li>
+                      <li>&#9900; Postavljanje namere u vezi sa večnim i beskonačnim u sebi i ljudskog trajanja u
+                      prostoru i vremenu;</li>
+                      <li>&#9900; Postavljanje namera u smislu integrisanja muškog i ženskog principa u čoveku;</li>
+                      <li>&#9900; Postavljanje namera sveobuhvatnosti kroz sve aspekte celovitog bića.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ishod drugog modula je savladana produbljena znanja o primeni simbola u integrativnom
+                      fraktalnom crtežu, zasnovanim na principima svete geometrije.    
+                    </p>
+                  </div>
+                </article>
+                <article class="program__section_module">
+                  <div class="program__section_module-name">
+                    <h3 class="program__section_module-name--header">Umetnički modul</h3>
+                    <button type="button" class="program__section_module-name--btn" aria-label="Saznaj više">
+                      <span class="plus-icon">
+                        <i
+                          ><img
+                            src="./img/plus-square.svg"
+                            class="square-icons"
+                            alt="square plus"
+                        /></i>
+                      </span>
+                      <span class="minus-icon">
+                        <i
+                          ><img
+                            src="./img/minus-square.svg"
+                            class="square-icons"
+                            alt="square minus"
+                        /></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="program__section_module-content">
+                    <p class="program__section_module-content--text">
+                      KREATIVNI IZRAZ U INTEGRATIVNOM FRAKTALNOM CRTEŽU <br>
+                      Ovaj modul se bavi ritmom crteža, vibracijom boje, senkama, ornamentima i
+                      tradicionalnim šarama, simbolima iz prirode, lavirintima i
+                      prirodnim metamorfozama.
+                    </p>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Teme trećeg modula su: 
+                    </p>
+                    <ul class="program__section_module-content--list">
+                      <li>1. Portreti;</li>
+                      <li>2. Anđeli;</li>
+                      <li>3. Drvo razvoja;</li>
+                      <li>4. Sveto bilje;</li>
+                      <li>5. Pero;</li>
+                      <li>6. Dijamant;</li>
+                      <li>7. Transformacija;</li>
+                      <li>8. Izložba.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ciljevi trećeg modula su:
+                    </p>
+                    <ul>
+                      <li>&#9900; Aktiviranje procesa započetih promena kroz kreativni pristup;</li>
+                      <li>&#9900; Integrisanje novog iskustva umetničkog terapijskog crtanja sa dosadašnjim iskustvima ličnog rada;</li>
+                      <li>&#9900; Produbljivanje tema značajnih za vitalni rast i razvoj;</li>
+                      <li>&#9900; Razvijanje i obogaćivanje ličnosti kroz primenu umetničkog izražavanja u integrativnom
+                      fraktalnom crtanju;</li>
+                      <li>&#9900; Dublje povezivanje sa mudrošću prirode i njenih zakonitosti;</li>
+                      <li>&#9900; Podsticanje duhovnog sazrevanja;</li>
+                      <li>&#9900; Razvijanje novih veština i umeća crtanja i slikanja kao doprinos ličnoj transformaciji.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ishod trećeg modula je osnaženo umetničko čovekovo biće kroz tematske fraktalne
+                      crteže.
+                    </p>
+                  </div>
+                </article>
+                <article class="program__section_module">
+                  <div class="program__section_module-name">
+                    <h3 class="program__section_module-name--header">Brojevi modul</h3>
+                    <button type="button" class="program__section_module-name--btn" aria-label="Saznaj više">
+                      <span class="plus-icon">
+                        <i
+                          ><img
+                            src="./img/plus-square.svg"
+                            class="square-icons"
+                            alt="square plus"
+                        /></i>
+                      </span>
+                      <span class="minus-icon">
+                        <i
+                          ><img
+                            src="./img/minus-square.svg"
+                            class="square-icons"
+                            alt="square minus"
+                        /></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="program__section_module-content">
+                    <p class="program__section_module-content--text">
+                      SIMBOLIKA BROJEVA U INTEGRATIVNOM FRAKTALNOM CRTEŽU <br>
+                      Ovaj modul se bavi simbolikom i razumevanjem kosmološke pozicije brojeva
+                      i njihovog uticaja na čoveka.
+                    </p>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Teme četvrtog modula su:
+                    </p>
+                    <ul class="program__section_module-content--list">
+                      <li>1. Ja u jednom;</li>
+                      <li>2. Jedno u meni;</li>
+                      <li>3. Ja jesam;</li>
+                      <li>4. Mi jesmo;</li>
+                      <li>5. Sve jeste;</li>
+                      <li>6. Samotransformacija;</li>
+                      <li>7. Postajanje;</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ciljevi četvrtog modula su:
+                    </p>
+                    <ul>
+                      <li>&#9900; Integrisanje stečenog iskustva i saznanja o sebi, životu, postojanju kroz fraktalnu filozofiju;</li>
+                      <li>&#9900; Razumevanje simbolike brojeva u okviru integrativnog fraktalnog crteža;</li>
+                      <li>&#9900; Povezivanje uvida, procesa, ishoda stečenih i pokrenutih kroz prethodna tri modula;</li>
+                      <li>&#9900; Podsticanje dubljeg otvaranja za ličnu transforamciju.</li>
+                    </ul>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ishod četvrtog modula je povećana svesnost o značenju brojeva i primena njihove
+                      kosmološke pozicije u svakodnevnom životu.
+                    </p>
+                  </div>
+                </article>
+                <article class="program__section_module">
+                  <div class="program__section_module-name">
+                    <h3 class="program__section_module-name--header">Pedagoški modul</h3>
+                    <button type="button" class="program__section_module-name--btn" aria-label="Saznaj više">
+                      <span class="plus-icon">
+                        <i
+                          ><img
+                            src="./img/plus-square.svg"
+                            class="square-icons"
+                            alt="square plus"
+                        /></i>
+                      </span>
+                      <span class="minus-icon">
+                        <i
+                          ><img
+                            src="./img/minus-square.svg"
+                            class="square-icons"
+                            alt="square minus"
+                        /></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="program__section_module-content">
+                    <p class="program__section_module-content--text">
+                      MODUL ZA PREDAVAČE INTEGRATIVNOG FRAKTALNOG CRTEŽA <br>
+                      Ovaj modul je namenjen  za predavače integrativnog fraktalnog crteža
+                      Škole IskoniJa, kroz metodičko-didaktičku obuku (komunikacijske
+                      veštine, psihosocijalne veštine vođenja grupe, prilagođeni
+                      programi sa decom, starima, osobama sa invaliditetom,
+                      vulnerabilnim grupama).
+                    </p>
+                    <hr class="text-divider">
+                    <p class="program__section_module-content--header">
+                      Ishod petog modula je savladan program za predavače i samostalna primena.
+                    </p>
+                  </div>
+                </article>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section">
+        <div class="section__wrapper">
+          <div class="main__page_heading">
+            <h2 class="heading__primary">Ostali programi</h2>
+          </div>
+          <div class="other">
+            <div class="other__optional">
+              <ul class="other__optional_programs">
+                <h4 class="other__optional_programs-h">FAKULTATIVNI PROGRAMI</h4>
+
+                <li>&#10095; Kaligrafija i ornamentika u IFC</li>
+                <li>&#10095; Predačke linije u IFC</li>
+                <li>&#10095; Škola za roditelje - integrativni fraktalni porodični crtež</li>
+                <li>&#10095; Kreativni potencijal u IFC</li>
+                <li>&#10095; Bojama do zdravlja u IFC</li>
+                <li>&#10095; Terapijske grupe - individualni ciklusi</li>
+              </ul>
+            </div>
+            <div class="other__optional">
+              <ul class="other__optional_programs">
+                <h4 class="other__optional_programs-h">DRUGI PROGRAMI ŠKOLE</h4>
+                <li>&#10095; Uvodni modul u integrativni fraktalni crtež</li>
+                <li>&#10095; Međunarodne konferencije integrativne fraktalnosti</li>
+                <li>&#10095; Međunarodne fraktalne kolonije</li>
+                <li>&#10095; Izložbe fraktalnih ciklusa</li>
+                <li>&#10095; Letnje /zimske škole fraktalnosti</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__socials">
+        <div class="footer__logo">
+          <img
+            class="footer__logo_img lazy"
+            data-src="./img/iskonija_logo.png"
+            alt=""
+          />
+        </div>
+        <div class="footer__socials_content">
+          <p class="footer__socials_text">
+            Škola integrativne fraktalnosti - IskoniJa je uvek na raspolaganju
+            učesnicima škole i onima koji se interesuju za fraktalnu umetnost.
+            <br />
+            Ako i dalje tražite odgovore na neka pitanja - pišite nam i mi ćemo
+            u najkraćem roku odgovoriti na sva vaša pitanja i nedoumice.
+          </p>
+          <div class="footer__email">
+            <div class="footer__email_list">
+              <a href="contact.html" class="footer__socials_list-item" aria-label="Email"
+                >skola@skola-iskon.rs</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer__socials_content">
+          <p class="footer__socials_text">
+            Zapratite nas na društvenim mrežama i budete uvek u toku sa novim
+            dešavanjima u IskoniJa. Ispratite radove novih i starih polaznika,
+            saznajte sve o novim terminima upisa i promotivnim časovima i
+            pročitajte vredna iskustva i uvide učesnika naše škole.
+          </p>
+          <ul class="footer__socials_list">
+            <li class="footer__socials_list-item">
+              <a
+                class="footer__socials_list-logo"
+                href="https://www.facebook.com/skola.iskon/"
+                aria-label="Facebook"
+                ><i>
+                  <img
+                    src="./img/facebook-yellow.svg"
+                    class="social__icons"
+                    alt="Facebook"
+                  />
+                </i>
+              </a>
+            </li>
+            <li class="footer__socials_list-item">
+              <a
+                class="footer__socials_list-logo"
+                href="https://www.instagram.com/fraktali_iskon/"
+                aria-label="Instagram"
+                ><i>
+                  <img
+                    src="./img/instagram-yellow.svg"
+                    class="social__icons"
+                    alt="Instagram" /></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

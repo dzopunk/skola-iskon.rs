@@ -1,0 +1,59 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--color-text);
+  position: relative;
+  background-color: rgb(250, 249, 246);
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --color-white: rgb(250, 249, 246);
+  --color-dark-purple: rgb(46, 47, 88);
+  --swiper-theme-color: rgb(97, 3, 204);
+  --transition: all 0.3s linear;
+  --color-purple: rgb(80, 85, 129);
+  --color-dark-yellow: rgb(244, 211, 94);
+  --color-yellow: rgb(250, 240, 202);
+}

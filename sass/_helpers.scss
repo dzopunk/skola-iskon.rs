@@ -1,0 +1,230 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__icons {
+  width: 4rem;
+  height: 4rem;
+}
+/*Sidebar*/
+.sidebar-toggle {
+  cursor: pointer;
+}
+
+.sidebar-header {
+  align-self: flex-end;
+  padding: 1rem 1.5rem;
+}
+.close-btn {
+  font-size: 3.75rem;
+  cursor: pointer;
+  color: var(--color-nav);
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 64em) {
+  .close-btn {
+    margin-right: 4rem;
+    margin-top: 2rem;
+  }
+}
+.links__item {
+  display: block;
+  font-size: 2.5rem;
+  padding: 1rem 2.5rem;
+  color: var(--color-dark-purple);
+  transition: var(--transition);
+}
+.links__item:hover {
+  background: var(--color-purple);
+  color: var(--color-dark-yellow);
+  transform: translate(5px);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.social-icons_item {
+  margin: 0 1.5rem;
+}
+
+.sidebar {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(100%);
+  z-index: 100;
+}
+@keyframes showMenu {
+  from {transform: translate(100%);}
+  to {transform: translate(0);}
+}
+.show-sidebar {
+  transform: translate(0);
+  animation-name: showMenu;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
+@media screen and (min-width: 48em) {
+  .sidebar {
+    width: 40rem;
+  }
+}
+
+/////sticky/////
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.small {
+  font-size: 5rem !important;
+}
+
+////////sekcija/////
+.section__wrapper {
+  margin-inline: 1rem;
+  margin-block: 5rem;
+}
+@media only screen and (min-width: 23.4375em) {
+  .section__wrapper {
+    margin-inline: 3rem;
+  }
+}
+@media only screen and (min-width: 26.5625em) {
+  .section__wrapper {
+    margin-inline: 4rem;
+  }
+}
+@media only screen and (min-width: 31.25em) {
+  .section__wrapper {
+    margin-inline: 5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .section__wrapper {
+    margin-inline: 8rem;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .section__wrapper {
+    margin-inline: 25rem;
+  }
+}
+@media only screen and (min-width: 118.75em) {
+  .section__wrapper {
+    margin-inline: 40rem;
+  }
+}
+
+//////naslov sekcije////
+.heading__primary {
+  color: var(--color-dark-purple);
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 48em) {
+  .heading__primary {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 118.75em) {
+  .heading__primary {
+    font-size: 5rem;
+  }
+}
+
+////tekst ispod naslova sekcije////
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 5rem;
+  text-align: center;
+  &__text {
+    line-height: 2.7rem;
+  }
+}
+@media only screen and (min-width: 118.75em) {
+  .content {
+    margin-block: 10rem;
+    &__text {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+//////dugme ispod teksta svake sekcije/////
+
+.primary__button {
+  color: var(--color-dark-purple);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  position: relative;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 5rem;
+    background: var(--color-dark-yellow);
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: all 0.3s ease;
+    z-index: -100;
+  }
+  &:hover:before {
+    width: 100%;
+    background: var(--color-dark-yellow);
+  }
+}
+
+////header za ostale stranice///
+.header__page {
+  background-image: url(../img/wooden_pencils.webp);
+  background-size: cover;
+  background-position: bottom;
+  height: 30vh;
+}
+@media only screen and (min-width: 37.5em) {
+  .header__page {
+    height: 35vh;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .header__page {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .header__page {
+    background-position: right 0% bottom 20%;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .header__page {
+    height: 45vh;
+  }
+}

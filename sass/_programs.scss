@@ -1,0 +1,124 @@
+.program {
+  &__table {
+   margin-top: 5rem;
+  }
+  &__section{
+    &_module{
+      margin-bottom: 2rem;
+      &-name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--color-yellow);
+        padding: 1rem;
+        &--header{
+          color: var(--color-dark-purple);
+          font-size: 2.2rem;
+          font-weight: 700;
+        }
+        &--btn{
+          cursor: pointer;
+        }
+      }
+      &-content{
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem 1rem;
+      display: none;
+        &--text{
+          text-align: start;
+        }
+        &--header{
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+    }
+  }
+}
+}
+@media only screen and (min-width: 118.75em){
+  .program__table{
+    margin-top: 10rem;
+  }
+  .program__section_module-content{
+    padding: 2rem;
+  }
+  .program__section_module-name{
+    padding: 2rem;
+    &--header{
+      font-size: 2.5rem;
+    }font-size: 2.5rem;
+  }
+  .program__section_module-content--text{
+    font-size: 2rem;
+  }
+}
+
+.main__page_content-text{
+  text-align: justify;
+}
+.main__page_content-materials{
+  text-align: justify;
+}
+.other {
+  margin-top: 5rem;
+  &__optional{
+    margin-top: 3rem;
+    &_programs {
+      &>*{
+        margin-bottom: 1rem;
+      }
+      &-h{
+        color: var(--color-dark-purple);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 75em){
+  .other{
+    display: flex;
+    justify-content: space-between;
+  } 
+}
+@media only screen and (min-width: 118.75em){
+  .other{
+    margin-top: 10rem;
+    font-size: 2rem;
+  }
+}
+//////////////
+.minus-icon {
+  display: none;
+}
+.show-text .program__section_module-content {
+  display: block;
+  animation-name: showText;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+.square-icons {
+  display: block;
+  width: 3rem;
+}
+@media only screen and (min-width: 118.75em){
+  .square-icons {
+    width: 3.5rem;
+  }
+}
+.text-divider{
+  margin-block: 1rem;
+}
+
+@keyframes showText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
