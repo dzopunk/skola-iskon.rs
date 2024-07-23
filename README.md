@@ -1,6 +1,7 @@
 # Art Therapy School Website
 
-![School Logo](https://github.com/dzopunk/skola-iskon.rs/blob/main/img/iskonija_logo.png)
+![School Logo](https://github.com/dzopunk/skola-iskon.rs/blob/main/img/logo-png.png)
+
 
 ## Overview
 
